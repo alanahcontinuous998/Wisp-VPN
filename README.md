@@ -52,7 +52,8 @@
 
 ## 🖥️ Интерфейс
 
-Приложение состоит из трёх вкладок — код этих экранов уже есть в `client/src/WispVpn.App/Views`, живое демо на [сайте проекта](https://postmanreminisce.github.io/wisp-vpn/#preview):
+Приложение состоит из трёх вкладок
+(https://postmanreminisce.github.io/wisp-vpn/#preview):
 
 <div align="center">
 <img src="docs/assets/preview-connect.svg" width="32%" alt="Экран подключения" />
