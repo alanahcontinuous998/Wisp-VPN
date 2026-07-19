@@ -52,11 +52,13 @@
 
 ## 🖥️ Интерфейс
 
-<div align="center">
-<img src="docs/assets/preview-hero.svg" width="80%" alt="Wisp VPN — приватное соединение через защищённые узлы по всему миру" />
-</div>
+Приложение состоит из трёх вкладок — код этих экранов уже есть в `client/src/WispVpn.App/Views`, живое демо на [сайте проекта](https://postmanreminisce.github.io/wisp-vpn/#preview):
 
-Приложение состоит из трёх вкладок — макеты экранов и живое демо на [сайте проекта](https://postmanreminisce.github.io/wisp-vpn/#preview):
+<div align="center">
+<img src="docs/assets/preview-connect.svg" width="32%" alt="Экран подключения" />
+<img src="docs/assets/preview-servers.svg" width="32%" alt="Список серверов" />
+<img src="docs/assets/preview-settings.svg" width="32%" alt="Настройки" />
+</div>
 
 - 🔌 **Подключение** — центральная кнопка включения/выключения VPN, текущий сервер, статус туннеля
 - 🌍 **Серверы** — список доступных серверов с задержкой в мс
