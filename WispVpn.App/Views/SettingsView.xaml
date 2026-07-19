@@ -1,0 +1,22 @@
+<UserControl x:Class="WispVpn.App.Views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="{StaticResource BackgroundBrush}">
+    <StackPanel Margin="16">
+        <CheckBox Content="Kill Switch"
+                  IsChecked="{Binding KillSwitchEnabled}"
+                  Foreground="{StaticResource TextBrush}"
+                  Margin="0,0,0,16"/>
+        <CheckBox Content="Запуск вместе с Windows"
+                  IsChecked="{Binding LaunchAtStartup}"
+                  Foreground="{StaticResource TextBrush}"
+                  Margin="0,0,0,16"/>
+        <CheckBox Content="Автовыбор сервера по пингу"
+                  IsChecked="{Binding AutoSelectServer}"
+                  Foreground="{StaticResource TextBrush}"
+                  Margin="0,0,0,16"/>
+        <CheckBox Content="Уведомления"
+                  IsChecked="{Binding NotificationsEnabled}"
+                  Foreground="{StaticResource TextBrush}"/>
+    </StackPanel>
+</UserControl>

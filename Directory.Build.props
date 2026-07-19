@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <Company>Wisp VPN contributors</Company>
+    <Product>Wisp VPN</Product>
+    <Copyright>Copyright (c) 2026 Wisp VPN contributors</Copyright>
+    <NeutralLanguage>ru</NeutralLanguage>
+  </PropertyGroup>
+</Project>

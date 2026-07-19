@@ -1,0 +1,33 @@
+<UserControl x:Class="WispVpn.App.Views.ServerListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="{StaticResource BackgroundBrush}">
+    <ListBox ItemsSource="{Binding Servers}"
+             Background="Transparent"
+             BorderThickness="0"
+             Margin="12">
+        <ListBox.ItemTemplate>
+            <DataTemplate>
+                <Border Background="{StaticResource SurfaceBrush}"
+                        BorderBrush="{StaticResource BorderBrush}"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        Padding="12,10"
+                        Margin="0,0,0,8">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0"
+                                   Text="{Binding Server}"
+                                   Foreground="{StaticResource TextBrush}"/>
+                        <TextBlock Grid.Column="1"
+                                   Text="{Binding LatencyMs, StringFormat='{}{0} ms'}"
+                                   Foreground="{StaticResource AccentGreenBrush}"/>
+                    </Grid>
+                </Border>
+            </DataTemplate>
+        </ListBox.ItemTemplate>
+    </ListBox>
+</UserControl>
