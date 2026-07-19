@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wisp VPN — бесплатный VPN для Windows</title>
+<meta name="description" content="Wisp VPN — бесплатный VPN-клиент для Windows. Без логов, без ограничений трафика, на основе WireGuard.">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a class="brand" href="#top">
+      <img src="assets/logo.svg" alt="">
+      <span>Wisp VPN</span>
+    </a>
+    <div class="nav-links">
+      <a href="#features">Возможности</a>
+      <a href="#preview">Превью</a>
+      <a href="#download">Скачать</a>
+      <a href="https://github.com/PostmanReminisce/wisp-vpn/tree/main/docs">Документация</a>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Переключить тему" title="Светлая/тёмная тема">
+        <svg id="theme-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 1ZM10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm1.238-3.362a.75.75 0 1 0-1.06-1.06l-1.061 1.06a.75.75 0 0 0 1.06 1.06l1.061-1.06Zm-8.415-1.06a.75.75 0 0 0-1.06 1.06l1.06 1.061a.75.75 0 1 0 1.06-1.06L3.323 3.577ZM1 8a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 1 8Zm13.25-.75a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5h-1.5Zm-1.038 4.298a.75.75 0 1 0-1.06 1.06l1.06 1.061a.75.75 0 0 0 1.061-1.06l-1.06-1.061Zm-8.415 1.06a.75.75 0 1 0 1.06 1.06l1.061-1.06a.75.75 0 1 0-1.06-1.06l-1.061 1.06ZM8 12.75a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5a.75.75 0 0 1 .75-.75Z"/></svg>
+      </button>
+      <a class="icon-btn" href="https://github.com/PostmanReminisce/wisp-vpn" aria-label="GitHub" title="Исходный код на GitHub">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="container">
+    <div class="badge-dev">🚧 Проект в активной разработке</div>
+    <br>
+    <img class="logo" src="assets/logo.svg" alt="Wisp VPN">
+    <h1>Приватный интернет,<br>бесплатно и открыто</h1>
+    <p class="lead">Wisp VPN — бесплатный VPN-клиент для Windows. Без логов, без ограничений трафика, без скрытых платежей.</p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary btn-lg" href="https://github.com/PostmanReminisce/wisp-vpn/releases/latest">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"/><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.749.749 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06l1.97 1.969Z"/></svg>
+        Скачать для Windows
+      </a>
+      <a class="btn btn-secondary btn-lg" href="#preview">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14c-1.981 0-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.329 2.992 6.019 2 8 2ZM1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5c1.473 0 2.825-.742 3.955-1.715 1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.825 4.242 9.473 3.5 8 3.5c-1.473 0-2.825.742-3.955 1.715-1.124.967-1.954 2.096-2.366 2.717ZM8 10a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
+        Превью интерфейса
+      </a>
+    </div>
+
+    <div class="hero-meta">
+      <a href="https://github.com/PostmanReminisce/wisp-vpn">github.com/PostmanReminisce/wisp-vpn</a> · MIT License
+    </div>
+
+    <div class="badges-row">
+      <img src="https://img.shields.io/github/license/PostmanReminisce/wisp-vpn?style=flat-square&color=3fb950" alt="License">
+      <img src="https://img.shields.io/github/v/release/PostmanReminisce/wisp-vpn?style=flat-square&include_prereleases&color=58a6ff" alt="Release">
+      <img src="https://img.shields.io/badge/platform-Windows-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Platform">
+      <img src="https://img.shields.io/github/stars/PostmanReminisce/wisp-vpn?style=flat-square&color=f2cc60" alt="Stars">
+    </div>
+  </div>
+</header>
+
+<section id="features">
+  <div class="container">
+    <div class="section-head">
+      <h2>Возможности</h2>
+      <p>Всё необходимое для быстрого и приватного подключения.</p>
+    </div>
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 4a4 4 0 0 1 8 0v2h.25c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 12.25 15h-8.5A1.75 1.75 0 0 1 2 13.25v-5.5C2 6.784 2.784 6 3.75 6H4Zm8.25 3.5h-8.5a.25.25 0 0 0-.25.25v5.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25ZM10.5 6V4a2.5 2.5 0 1 0-5 0v2Z"/></svg></div>
+        <h3>WireGuard</h3>
+        <p>Современный, быстрый и хорошо аудированный протокол шифрования вместо тяжёлых legacy-решений.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM1.5 8a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0Zm7.25-3.25a.75.75 0 0 0-1.5 0v3.5c0 .199.079.39.22.53l2.25 2.25a.75.75 0 1 0 1.06-1.06L8.75 7.94Z"/></svg></div>
+        <h3>Без логов</h3>
+        <p>Не собираем и не храним логи активности пользователей. Политика зафиксирована в SECURITY.md.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M1.75 1h2.5a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0V3.56L2.03 5.03a.75.75 0 0 1-1.06-1.06L2.44 2.5H1.75a.75.75 0 0 1 0-1.5Zm12.5 0a.75.75 0 0 1 0 1.5h-.69l1.47 1.47a.75.75 0 1 1-1.06 1.06L12.5 3.56v1.19a.75.75 0 0 1-1.5 0v-2.5A.75.75 0 0 1 11.75 1h2.5ZM2.5 11.25a.75.75 0 0 0-1.5 0v2.5c0 .414.336.75.75.75h2.5a.75.75 0 0 0 0-1.5H3.06l1.47-1.47a.75.75 0 1 0-1.06-1.06L2 11.94v-.69Zm11.5 0v.69l-1.47-1.47a.75.75 0 1 0-1.06 1.06l1.47 1.47h-.69a.75.75 0 0 0 0 1.5h2.5a.75.75 0 0 0 .75-.75v-2.5a.75.75 0 0 0-1.5 0Z"/></svg></div>
+        <h3>Без ограничений трафика</h3>
+        <p>Никаких лимитов по объёму данных или искусственного троттлинга скорости.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8.533.133a1.75 1.75 0 0 0-1.066 0L1.6 2.2A1.75 1.75 0 0 0 .5 3.816V8c0 4.6 3.1 7.36 6.66 8.816a1.75 1.75 0 0 0 1.35.001C11.9 15.36 15 12.6 15 8V3.816a1.75 1.75 0 0 0-1.1-1.616L8.533.133ZM2 3.816l5.867-2.066a.25.25 0 0 1 .154 0L13.9 3.816a.25.25 0 0 1 .1.157V8c0 3.879-2.605 6.199-5.755 7.472a.246.246 0 0 1-.19 0C4.905 14.199 2.3 11.879 2.3 8V3.973a.25.25 0 0 1 .1-.157Z"/></svg></div>
+        <h3>Kill Switch</h3>
+        <p>Автоматическая блокировка трафика при внезапном обрыве VPN-туннеля, чтобы не «утёк» реальный IP.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M2.5 1.75a.25.25 0 0 1 .25-.25h8.5a.25.25 0 0 1 .25.25v1.5a.25.25 0 0 1-.25.25h-8.5a.25.25 0 0 1-.25-.25Zm.25 3.5h8.5c.966 0 1.75.784 1.75 1.75v4.25a1.75 1.75 0 0 1-1.75 1.75h-8.5A1.75 1.75 0 0 1 1 11.25V7c0-.966.784-1.75 1.75-1.75ZM2.5 7v4.25c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25V7a.25.25 0 0 0-.25-.25h-8.5A.25.25 0 0 0 2.5 7Z"/></svg></div>
+        <h3>Windows 10 и 11</h3>
+        <p>Нативный клиент с простым установщиком — без сторонних лаунчеров и лишних зависимостей.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M11.13.653a.75.75 0 0 1 .597.8l-.6 5.397h3.373a.75.75 0 0 1 .589 1.213l-7.7 9.75a.75.75 0 0 1-1.334-.577l.807-5.973H3.5a.75.75 0 0 1-.596-1.207L10.05.947a.75.75 0 0 1 1.08-.294Z"/></svg></div>
+        <h3>Быстрое подключение</h3>
+        <p>Минимум кликов от запуска приложения до защищённого соединения.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="preview">
+  <div class="container">
+    <div class="section-head">
+      <h2>Превью интерфейса</h2>
+      <p>Концепт-макеты экранов приложения. Финальный дизайн может отличаться по мере разработки.</p>
+    </div>
+    <div class="gallery">
+      <figure data-full="assets/preview-connect.svg">
+        <img src="assets/preview-connect.svg" alt="Экран подключения" loading="lazy">
+        <figcaption>Экран подключения</figcaption>
+      </figure>
+      <figure data-full="assets/preview-servers.svg">
+        <img src="assets/preview-servers.svg" alt="Список серверов" loading="lazy">
+        <figcaption>Список серверов</figcaption>
+      </figure>
+      <figure data-full="assets/preview-settings.svg">
+        <img src="assets/preview-settings.svg" alt="Настройки" loading="lazy">
+        <figcaption>Настройки</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="container">
+    <div class="section-head">
+      <h2>Как это будет работать</h2>
+      <p>Три шага от скачивания до защищённого подключения.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Скачайте установщик</h3>
+        <p>Возьмите последнюю сборку на странице Releases — без регистрации и SMS.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Выберите сервер</h3>
+        <p>Отметьте ближайшую локацию по пингу или доверьтесь автовыбору.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Нажмите «Подключиться»</h3>
+        <p>Туннель WireGuard поднимется автоматически, трафик защищён.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <div class="container">
+    <div class="section-head">
+      <h2>Скачать</h2>
+      <p>Сборки публикуются в разделе Releases репозитория.</p>
+    </div>
+    <div class="download-card">
+      <div class="win-icon">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M0 2.75A.75.75 0 0 1 .616 2.01l6.5-1a.75.75 0 0 1 .884.739V7.25a.75.75 0 0 1-.75.75H.75A.75.75 0 0 1 0 7.25Zm8.75-.99a.75.75 0 0 1 .884-.739l6.5 1A.75.75 0 0 1 16 2.75v4.5a.75.75 0 0 1-.75.75H9.5a.75.75 0 0 1-.75-.75ZM.75 8.5h6.5a.75.75 0 0 1 .75.75v4.51a.75.75 0 0 1-.884.738l-6.5-1A.75.75 0 0 1 0 12.26V9.25a.75.75 0 0 1 .75-.75Zm8.75.75a.75.75 0 0 1 .75-.75h5.75a.75.75 0 0 1 .75.75v3.01a.75.75 0 0 1-.616.739l-6.5 1a.75.75 0 0 1-.884-.739Z"/></svg>
+      </div>
+      <div class="download-info">
+        <h3>Wisp VPN для Windows</h3>
+        <p>Windows 10/11 · установщик .exe/.msi · без рекламы и телеметрии</p>
+        <ul class="download-reqs">
+          <li>Windows 10 (1809+) или Windows 11</li>
+          <li>Права администратора для установки</li>
+          <li>~50 МБ свободного места</li>
+        </ul>
+      </div>
+      <div class="download-actions">
+        <a class="btn btn-primary btn-lg" href="https://github.com/PostmanReminisce/wisp-vpn/releases/latest">Скачать последнюю версию</a>
+        <a href="https://github.com/PostmanReminisce/wisp-vpn/blob/main/docs/INSTALL.md" style="font-size:13px;">Инструкция по установке →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="https://github.com/PostmanReminisce/wisp-vpn">GitHub</a>
+      <a href="https://github.com/PostmanReminisce/wisp-vpn/blob/main/README.md">README</a>
+      <a href="https://github.com/PostmanReminisce/wisp-vpn/blob/main/docs/FAQ.md">FAQ</a>
+      <a href="https://github.com/PostmanReminisce/wisp-vpn/blob/main/docs/ROADMAP.md">Roadmap</a>
+      <a href="https://github.com/PostmanReminisce/wisp-vpn/blob/main/SECURITY.md">Security</a>
+      <a href="https://github.com/PostmanReminisce/wisp-vpn/blob/main/LICENSE">MIT License</a>
+    </div>
+    <div>Wisp VPN не связан с какими-либо коммерческими VPN-сервисами. Сделано энтузиастами, для людей.</div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var toggle = document.getElementById('theme-toggle');
+    var stored = localStorage.getItem('wisp-theme');
+    if (stored) root.setAttribute('data-theme', stored);
+
+    toggle.addEventListener('click', function () {
+      var current = root.getAttribute('data-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var isDark = current ? current === 'dark' : prefersDark;
+      var next = isDark ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('wisp-theme', next);
+    });
+  })();
+
+  (function () {
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightbox-img');
+
+    document.querySelectorAll('#preview figure').forEach(function (fig) {
+      fig.addEventListener('click', function () {
+        lightboxImg.src = fig.getAttribute('data-full');
+        lightboxImg.alt = fig.querySelector('img').alt;
+        lightbox.classList.add('open');
+      });
+    });
+
+    lightbox.addEventListener('click', function () {
+      lightbox.classList.remove('open');
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') lightbox.classList.remove('open');
+    });
+  })();
+</script>
+
+</body>
+</html>

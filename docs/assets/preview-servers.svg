@@ -1,0 +1,31 @@
+<svg width="400" height="280" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Список серверов Wisp VPN (концепт)">
+  <rect width="400" height="280" fill="#0d1117"/>
+
+  <rect width="400" height="32" fill="#161b22"/>
+  <line x1="0" y1="32" x2="400" y2="32" stroke="#21262d"/>
+  <circle cx="18" cy="16" r="5" fill="#ff5f56"/>
+  <circle cx="36" cy="16" r="5" fill="#ffbd2e"/>
+  <circle cx="54" cy="16" r="5" fill="#27c93f"/>
+  <text x="200" y="20" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#8b949e">Серверы</text>
+
+  <!-- rows -->
+  <g font-family="Segoe UI, sans-serif" font-size="13">
+    <rect x="16" y="48" width="368" height="42" rx="8" fill="#161b22" stroke="#30363d"/>
+    <text x="32" y="74" fill="#c9d1d9">🇳🇱 Amsterdam #1</text>
+    <text x="330" y="74" fill="#3fb950" text-anchor="end">24 ms</text>
+
+    <rect x="16" y="98" width="368" height="42" rx="8" fill="#161b22" stroke="#21262d"/>
+    <text x="32" y="124" fill="#c9d1d9">🇩🇪 Frankfurt #2</text>
+    <text x="330" y="124" fill="#3fb950" text-anchor="end">31 ms</text>
+
+    <rect x="16" y="148" width="368" height="42" rx="8" fill="#161b22" stroke="#30363d"/>
+    <text x="32" y="174" fill="#c9d1d9">🇫🇮 Helsinki #1</text>
+    <text x="330" y="174" fill="#d29922" text-anchor="end">58 ms</text>
+
+    <rect x="16" y="198" width="368" height="42" rx="8" fill="#161b22" stroke="#21262d"/>
+    <text x="32" y="224" fill="#c9d1d9">🇵🇱 Warsaw #1</text>
+    <text x="330" y="224" fill="#d29922" text-anchor="end">62 ms</text>
+  </g>
+
+  <text x="200" y="262" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#8b949e">список серверов расширяется по мере разработки</text>
+</svg>

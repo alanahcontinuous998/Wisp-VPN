@@ -1,0 +1,34 @@
+<svg width="400" height="280" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Настройки Wisp VPN (концепт)">
+  <rect width="400" height="280" fill="#0d1117"/>
+
+  <rect width="400" height="32" fill="#161b22"/>
+  <line x1="0" y1="32" x2="400" y2="32" stroke="#21262d"/>
+  <circle cx="18" cy="16" r="5" fill="#ff5f56"/>
+  <circle cx="36" cy="16" r="5" fill="#ffbd2e"/>
+  <circle cx="54" cy="16" r="5" fill="#27c93f"/>
+  <text x="200" y="20" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#8b949e">Настройки</text>
+
+  <g font-family="Segoe UI, sans-serif" font-size="13" fill="#c9d1d9">
+    <text x="32" y="70">Kill Switch</text>
+    <rect x="320" y="58" width="48" height="22" rx="11" fill="#3fb950"/>
+    <circle cx="356" cy="69" r="9" fill="#0d1117"/>
+
+    <text x="32" y="118">Запуск вместе с Windows</text>
+    <rect x="320" y="106" width="48" height="22" rx="11" fill="#3fb950"/>
+    <circle cx="356" cy="117" r="9" fill="#0d1117"/>
+
+    <text x="32" y="166">Автовыбор сервера по пингу</text>
+    <rect x="320" y="154" width="48" height="22" rx="11" fill="#30363d"/>
+    <circle cx="332" cy="165" r="9" fill="#8b949e"/>
+
+    <text x="32" y="214">Уведомления</text>
+    <rect x="320" y="202" width="48" height="22" rx="11" fill="#30363d"/>
+    <circle cx="332" cy="213" r="9" fill="#8b949e"/>
+  </g>
+
+  <line x1="16" y1="88" x2="384" y2="88" stroke="#21262d"/>
+  <line x1="16" y1="136" x2="384" y2="136" stroke="#21262d"/>
+  <line x1="16" y1="184" x2="384" y2="184" stroke="#21262d"/>
+
+  <text x="200" y="260" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#8b949e">концепт интерфейса — финальный вид может отличаться</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg width="96" height="96" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Wisp VPN logo">
+  <defs>
+    <linearGradient id="wisp-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#bc8cff"/>
+    </linearGradient>
+    <linearGradient id="wisp-fade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#bc8cff" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield -->
+  <path d="M32 4 L54 12 V29 C54 44 45 54 32 60 C19 54 10 44 10 29 V12 Z"
+        fill="#0d1117" stroke="url(#wisp-grad)" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Wisp swirl inside the shield -->
+  <path d="M18 27 C24 21, 30 33, 36 27 C40 23, 44 27, 46 24"
+        fill="none" stroke="url(#wisp-fade)" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M18 35 C24 29, 30 41, 38 35 C42 31.5, 45 34, 47 32"
+        fill="none" stroke="url(#wisp-fade)" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
+  <path d="M20 43 C25 39, 29 46, 35 42"
+        fill="none" stroke="url(#wisp-fade)" stroke-width="1.8" stroke-linecap="round" opacity="0.6"/>
+
+  <circle cx="47" cy="24" r="1.6" fill="#bc8cff"/>
+</svg>
