@@ -8,8 +8,6 @@
 
 Обход блокировок · WireGuard · Kill Switch · без регистрации · без логов
 
-Бесплатно и без рекламы &nbsp;·&nbsp; Без регистрации &nbsp;·&nbsp; Открытый код (MIT) &nbsp;·&nbsp; Windows 10/11
-
 [![License: MIT](https://img.shields.io/github/license/PostmanReminisce/wisp-vpn?style=flat-square&color=3fb950)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/PostmanReminisce/wisp-vpn?style=flat-square&include_prereleases&color=58a6ff)](https://github.com/PostmanReminisce/wisp-vpn/releases)
 [![Platform](https://img.shields.io/badge/platform-Windows-0078D6?style=flat-square&logo=windows&logoColor=white)](docs/INSTALL.md)
