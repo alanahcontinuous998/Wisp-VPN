@@ -52,8 +52,7 @@
 
 ## 🖥️ Интерфейс
 
-Приложение состоит из трёх вкладок
-(https://postmanreminisce.github.io/wisp-vpn/#preview):
+Приложение состоит из трёх вкладок:
 
 <div align="center">
 <img src="docs/assets/preview-connect.svg" width="32%" alt="Экран подключения" />
