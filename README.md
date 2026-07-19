@@ -13,7 +13,7 @@
 [![Platform](https://img.shields.io/badge/platform-Windows-0078D6?style=flat-square&logo=windows&logoColor=white)](docs/INSTALL.md)
 [![Stars](https://img.shields.io/github/stars/PostmanReminisce/wisp-vpn?style=flat-square&color=f2cc60)](https://github.com/PostmanReminisce/wisp-vpn/stargazers)
 
-[**⬇ Скачать для Windows**](https://postmanreminisce.github.io/wisp-vpn/) · [🌐 Сайт проекта](https://postmanreminisce.github.io/wisp-vpn/) · [👁 Превью интерфейса](https://postmanreminisce.github.io/wisp-vpn/#preview) · [📖 Документация](docs/)
+[**⬇ Скачать для Windows**](https://postmanreminisce.github.io/Wisp-VPN/) · [🌐 Сайт проекта](https://postmanreminisce.github.io/Wisp-VPN/) · [👁 Превью интерфейса](https://postmanreminisce.github.io/Wisp-VPN/#preview) · [📖 Документация](docs/)
 
 </div>
 
@@ -63,7 +63,7 @@
 
 ## ⬇ Скачать
 
-1. Перейти на наш [Сайт](https://postmanreminisce.github.io/wisp-vpn/) и скачать последний установщик для Windows.
+1. Перейти на наш [Сайт](https://postmanreminisce.github.io/Wisp-VPN/) и скачать последний установщик для Windows.
 2. Запустить установщик и следовать инструкциям.
 3. Подробности и системные требования — в [docs/INSTALL.md](docs/INSTALL.md).
 
