@@ -8,12 +8,11 @@
 
 ## Установка из релиза
 
-1. Откройте [страницу релизов](https://github.com/PostmanReminisce/wisp-vpn/releases/latest)
+1. Откройте [сайт](https://postmanreminisce.github.io/Wisp-VPN/)
 2. Скачайте последний установщик (`WispVPN-Setup-x.y.z.exe` или `.msi`)
 3. Запустите установщик от имени администратора
 4. После установки запустите Wisp VPN из меню «Пуск»
 
-> Пока в разделе Releases пусто — сборки появятся по мере готовности клиента. Следите за [CHANGELOG.md](../CHANGELOG.md).
 
 ## Проверка подлинности установщика
 
