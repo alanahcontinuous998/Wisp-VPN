@@ -1,0 +1,142 @@
+<div align="center">
+
+<img src="docs/assets/logo.svg" width="96" height="96" alt="Wisp VPN" />
+
+# Wisp VPN
+
+**Бесплатный VPN-клиент для Windows**
+
+Обход блокировок · WireGuard · Kill Switch · без регистрации · без логов
+
+🔒 Бесплатно и без рекламы &nbsp;·&nbsp; 🪪 Без регистрации &nbsp;·&nbsp; 🧩 Открытый код (MIT) &nbsp;·&nbsp; 🪟 Windows 10/11
+
+[![License: MIT](https://img.shields.io/github/license/PostmanReminisce/wisp-vpn?style=flat-square&color=3fb950)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/PostmanReminisce/wisp-vpn?style=flat-square&include_prereleases&color=58a6ff)](https://github.com/PostmanReminisce/wisp-vpn/releases)
+[![Platform](https://img.shields.io/badge/platform-Windows-0078D6?style=flat-square&logo=windows&logoColor=white)](docs/INSTALL.md)
+[![Issues](https://img.shields.io/github/issues/PostmanReminisce/wisp-vpn?style=flat-square&color=bc8cff)](https://github.com/PostmanReminisce/wisp-vpn/issues)
+[![Stars](https://img.shields.io/github/stars/PostmanReminisce/wisp-vpn?style=flat-square&color=f2cc60)](https://github.com/PostmanReminisce/wisp-vpn/stargazers)
+
+[**⬇ Скачать для Windows**](https://github.com/PostmanReminisce/wisp-vpn/releases/latest) · [🌐 Сайт проекта](https://postmanreminisce.github.io/wisp-vpn/) · [👁 Превью интерфейса](https://postmanreminisce.github.io/wisp-vpn/#preview) · [📖 Документация](docs/)
+
+</div>
+
+---
+
+> 🚧 **Проект в активной разработке.** Значок статуса у каждого пункта ниже честно показывает, что уже готово, а что в работе: ✅ готово · 🚧 в работе · 📋 запланировано. Полный список — в [ROADMAP.md](docs/ROADMAP.md).
+
+## 📖 О проекте
+
+Доступ к YouTube, Telegram, Discord, зарубежным CDN и множеству других сервисов в России и части СНГ нестабилен: провайдеры замедляют трафик, часть адресов блокируется, DPI распознаёт классические VPN-протоколы. Большинство бесплатных решений из магазинов приложений требуют регистрацию, показывают рекламу и не публикуют прозрачную политику логирования.
+
+**Wisp VPN** — некоммерческий VPN-клиент с открытым исходным кодом для Windows 10/11 на основе **WireGuard**. Никакого аккаунта, привязки карты или подписки — скачать, запустить, подключиться. Весь код открыт и проверяем: никакой «магии» и доверия на слово.
+
+💻 **Платформы:** сейчас в разработке только Windows-клиент. Другие платформы не планируются в ближайших релизах — см. [ROADMAP.md](docs/ROADMAP.md).
+
+## ✨ Возможности
+
+| | Возможность | Комментарий |
+|:---:|---|---|
+| ✅ | Открытый исходный код (MIT) | весь код клиента — в этом репозитории |
+| ✅ | MVVM-каркас приложения, интерфейс из 3 экранов | Подключение / Серверы / Настройки |
+| ✅ | Парсер конфигурации WireGuard | [`WireGuardConfigParser`](client/src/WispVpn.Core/Networking/WireGuardConfigParser.cs) |
+| ✅ | Измерение задержки до сервера | [`PingProbe`](client/src/WispVpn.Core/Networking/PingProbe.cs) |
+| 🚧 | Подключение туннеля **WireGuard** | ядро уже спроектировано (`ITunnelService`), само поднятие туннеля — в работе |
+| 🚧 | Генерация ключей X25519 | будет на основе проверенной криптобиблиотеки, не самописной |
+| 📋 | Kill Switch | блокировка трафика при обрыве VPN |
+| 📋 | Политика отсутствия логов | зафиксирована как цель в [SECURITY.md](SECURITY.md), независимый аудит — после первого стабильного релиза |
+| 📋 | Без ограничений по трафику и скорости | целевая модель — полностью бесплатно |
+| 📋 | Автовыбор сервера по пингу | |
+| 📋 | Портативная версия (без установки) | |
+
+Разбивка по статусам компонентов клиента — в [client/README.md](client/README.md). Полная дорожная карта — в [docs/ROADMAP.md](docs/ROADMAP.md).
+
+## 🖥️ Интерфейс
+
+<div align="center">
+<img src="docs/assets/preview-hero.svg" width="80%" alt="Wisp VPN — приватное соединение через защищённые узлы по всему миру" />
+</div>
+
+Приложение состоит из трёх вкладок — макеты экранов и живое демо на [сайте проекта](https://postmanreminisce.github.io/wisp-vpn/#preview):
+
+- 🔌 **Подключение** — центральная кнопка включения/выключения VPN, текущий сервер, статус туннеля
+- 🌍 **Серверы** — список доступных серверов с задержкой в мс
+- ⚙️ **Настройки** — Kill Switch, автозапуск, автовыбор сервера, уведомления
+
+> Разметка и код этих экранов уже есть в `client/src/WispVpn.App/Views`, но сама VPN-логика за кнопкой «Подключиться» пока не реализована (см. таблицу возможностей выше) — интерфейс демонстрирует, куда движется проект, а не готовый продукт.
+
+## ⬇ Скачать
+
+1. Перейти в [Releases](https://github.com/PostmanReminisce/wisp-vpn/releases/latest) и скачать последний установщик для Windows.
+2. Запустить установщик и следовать инструкциям.
+3. Подробности и системные требования — в [docs/INSTALL.md](docs/INSTALL.md).
+
+> **Пока релизов нет.** Сборки появятся, когда подключение туннеля из таблицы возможностей перейдёт в ✅ — следить за прогрессом можно в [CHANGELOG.md](CHANGELOG.md) и вкладке [Releases](https://github.com/PostmanReminisce/wisp-vpn/releases).
+
+## 🚀 Сборка из исходников
+
+Требуется [.NET 8 SDK](https://dotnet.microsoft.com/download) с workload `Windows Desktop`.
+
+```bash
+git clone https://github.com/PostmanReminisce/wisp-vpn.git
+cd wisp-vpn
+dotnet build
+dotnet test                                   # тесты WispVpn.Core
+dotnet run --project client/src/WispVpn.App   # запуск приложения
+```
+
+Кнопка «Подключиться» сейчас закономерно ответит «ещё не реализовано» — сам туннель не поднимается, см. [client/README.md](client/README.md) за подробным статусом каждого компонента.
+
+## 🔐 Протокол
+
+Единственный протокол в планах на первый релиз — **WireGuard**: современный, компактный (около 4000 строк кода ядра) и один из самых аудируемых VPN-протоколов, использующий ChaCha20-Poly1305 и Curve25519. Другие протоколы (OpenVPN, обфускация трафика для сложных сетей) рассматриваются позже — см. раздел «Позже» в [ROADMAP.md](docs/ROADMAP.md).
+
+Формат конфигурации — стандартный `.conf` WireGuard (`[Interface]` / `[Peer]`). Пример без реальных ключей — [configs/sample.conf](configs/sample.conf).
+
+## 🌍 Серверы
+
+Реальной серверной инфраструктуры пока нет — в коде (`StaticServerCatalogService`) используется фиксированный тестовый набор для разработки интерфейса (Amsterdam, Frankfurt, Helsinki, Warsaw). Реальные сервера появятся вместе с рабочим туннелем в v0.2 — см. [ROADMAP.md](docs/ROADMAP.md).
+
+## 🔒 Безопасность и приватность
+
+- **Без логов** — цель проекта: не собирать и не хранить логи активности пользователей. Пока это декларация, а не аудированный факт — статус будет обновлён здесь, когда появится независимая проверка.
+- **Открытый код** — весь клиент проверяем построчно, никакого closed-source бинарника с недоказуемыми обещаниями.
+- **Не катаем свою криптографию** — генерация ключей и шифрование будут основаны на проверенных библиотеках (WireGuard/X25519), а не самописных реализациях.
+
+Нашли уязвимость? Не создавайте публичный issue — процесс приватного репорта описан в [SECURITY.md](SECURITY.md).
+
+## 💻 Системные требования
+
+| | Значение |
+|---|---|
+| ОС | Windows 10 (1809+) или Windows 11, 64-bit |
+| Права | администратор (для настройки сетевого адаптера) |
+| Место на диске | ориентировочно ~50 МБ |
+| Дополнительный софт | не требуется (.NET входит в установщик) |
+
+Точные цифры будут уточнены с выходом первого релиза — см. [docs/INSTALL.md](docs/INSTALL.md).
+
+## ❓ FAQ
+
+Частые вопросы — в [docs/FAQ.md](docs/FAQ.md): бесплатно ли это, какой протокол используется, когда выйдет первая рабочая версия и как помочь проекту.
+
+## 🤝 Участие в разработке
+
+Будем рады помощи — от идей и багрепортов до кода. Правила — в [CONTRIBUTING.md](CONTRIBUTING.md), нормы поведения — в [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
+## 📚 Документация
+
+- [FAQ](docs/FAQ.md) — частые вопросы
+- [INSTALL.md](docs/INSTALL.md) — установка и системные требования
+- [ARCHITECTURE.md](docs/ARCHITECTURE.md) — как устроен проект
+- [ROADMAP.md](docs/ROADMAP.md) — дорожная карта
+- [client/README.md](client/README.md) — статус реализации по компонентам клиента
+
+## Лицензия
+
+Проект распространяется по лицензии [MIT](LICENSE).
+
+---
+
+<div align="center">
+<sub>Wisp VPN не связан с какими-либо коммерческими VPN-сервисами. Сделано энтузиастами, для людей.</sub>
+</div>
