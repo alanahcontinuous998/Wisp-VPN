@@ -11,7 +11,6 @@
 [![License: MIT](https://img.shields.io/github/license/PostmanReminisce/wisp-vpn?style=flat-square&color=3fb950)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/PostmanReminisce/wisp-vpn?style=flat-square&include_prereleases&color=58a6ff)](https://github.com/PostmanReminisce/wisp-vpn/releases)
 [![Platform](https://img.shields.io/badge/platform-Windows-0078D6?style=flat-square&logo=windows&logoColor=white)](docs/INSTALL.md)
-[![Issues](https://img.shields.io/github/issues/PostmanReminisce/wisp-vpn?style=flat-square&color=bc8cff)](https://github.com/PostmanReminisce/wisp-vpn/issues)
 [![Stars](https://img.shields.io/github/stars/PostmanReminisce/wisp-vpn?style=flat-square&color=f2cc60)](https://github.com/PostmanReminisce/wisp-vpn/stargazers)
 
 [**⬇ Скачать для Windows**](https://postmanreminisce.github.io/wisp-vpn/) · [🌐 Сайт проекта](https://postmanreminisce.github.io/wisp-vpn/) · [👁 Превью интерфейса](https://postmanreminisce.github.io/wisp-vpn/#preview) · [📖 Документация](docs/)
