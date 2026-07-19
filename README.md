@@ -64,7 +64,7 @@
 
 ## ⬇ Скачать
 
-1. Перейти в [Releases](https://github.com/PostmanReminisce/wisp-vpn/releases/latest) и скачать последний установщик для Windows.
+1. Перейти на наш [Сайт](https://postmanreminisce.github.io/wisp-vpn/) и скачать последний установщик для Windows.
 2. Запустить установщик и следовать инструкциям.
 3. Подробности и системные требования — в [docs/INSTALL.md](docs/INSTALL.md).
 
